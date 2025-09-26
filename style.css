@@ -1,7 +1,6 @@
 /* main content */
 .main-content {
   min-height: 100vh;
-  margin-bottom: 50px;
 }
 
 /* main-banner */
@@ -43,7 +42,7 @@
 .main-section {
   border: 1px solid red;
   margin-top: 40px;
-  margin: 80px 10px 20px 10px;
+  margin: 80px 120px 20px 120px;
   color: #87284E;
 
   h1 {

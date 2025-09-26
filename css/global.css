@@ -29,7 +29,6 @@ header {
 
 /* navbar */
 nav ul {
-  list-style-type: none;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -37,15 +36,12 @@ nav ul {
 }
 
 nav ul li a {
-  text-decoration: none;
   color: white;
   padding: 0.25em 0.5em;
 }
 
 nav ul li a:hover {
   color: #ddd;
-  transition-property: color;
-  transition-duration: 0.15s;
 }
 
 .active {
@@ -57,24 +53,75 @@ nav ul li a:hover {
 
 /* footer */
 footer {
-
   width: 100%;
-  height: 50px;
+  border: 1px solid black;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 0 120px 0 120px;
 
   background-color: #B95E82;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 
-  p {
-    color: white;
-    font-weight: 300;
+  hr {
+    width: 60%;
+    text-align: center;
   }
 
-  span {
-    color: #87284E;
-    font-weight: 400;
+
+  #footer-logo {
+    color: #ddd;
+    font-size: 45px;
+    margin: 25px 0 15px 25px;
+    left: 0;
+  }
+
+  #footer-nav {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    .li-title {
+      color: white;
+    }
+
+    .li-link {
+      margin-top: 10px;
+    }
+
+    .li-link a {
+      color: #240612;
+      font-weight: 200;
+    }
+
+    .li-link a:hover {
+      color: #efa2c1;
+    }
+  }
+
+  #bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      color: white;
+      font-weight: 100;
+
+    }
+
+    span {
+      color: #ddd;
+      font-weight: 400;
+    }
   }
 }
 
@@ -84,12 +131,15 @@ footer {
   /* header */
   header {
     position: fixed;
+
+    display: flex;
+    flex-direction: column;
+    align-items: inherit;
+
     width: 100%;
     height: auto;
     top: 0;
-    flex-direction: column;
-    align-items: inherit;
-    left: -19px
+
   }
 
   .logo p {
@@ -104,14 +154,34 @@ footer {
 
   nav ul li a {
     padding: inherit;
+    
+    .active {
+      background-color: inherit;
+    }
   }
 
-  .active {
-    background-color: inherit;
-  }
+
 
   /* footer */
   footer {
     font-size: 0.75em;
+    padding: 0;
+
+    #footer-logo {
+      font-size: 25px;
+    }
+
+    #footer-nav {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #bottom {
+      hr {
+        width: 45%;
+      }
+    }
   }
+
+
 }

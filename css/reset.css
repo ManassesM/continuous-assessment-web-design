@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Fira Sans", Arial, Helvetica, sans-serif;
 }
@@ -12,4 +16,18 @@ h3 {
 button {
   border: none;
   font-family: inherit;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  transition-property: color;
+  transition-duration: 0.15s;
 }
