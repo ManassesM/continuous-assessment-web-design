@@ -1,40 +1,87 @@
-body {
-  background-color: #F39F9F;
+/* main content */
+.main-content {
+  min-height: 100vh;
+  margin-bottom: 50px;
 }
 
-.slogan {
+/* main-banner */
+.main-banner {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
   height: 60vh;
-  background-color: #ffb9b9;
   padding: 0 20px;
+
+  background-color: #ffb9b9;
+  background-image: url("/assets/rio-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  p {
+    font-size: 30px;
+    background-color: #87284E;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
 }
 
-.slogan p {
-  font-size: 50px;
-  color: #87284E;
-  text-align: center;
+.banner-text {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+  width: 50%;
 }
 
-.slogan span {
+
+
+/* main section */
+.main-section {
+  border: 1px solid red;
+  margin-top: 40px;
+  margin: 80px 10px 20px 10px;
   color: #87284E;
-  font-weight: 300;
-  font-size: 25px;
-  text-align: center;
+
+  h1 {
+    font-size: 65px;
+  }
+
+  span {
+    font-size: 30px;
+  }
 }
 
 
 /* responsive design */
 @media (max-width: 500px) {
-  .slogan p {
-    font-weight: 200;
-    font-size: 30px;
+
+  /* main content */
+  .main-content {
+    margin-top: 85px;
   }
 
-  .slogan span {
-    font-size: inherit;
+  /* main banner */
+  .main-banner p {
+    font-weight: 100;
+  }
+
+  /* main section */
+  .main-section {
+    margin: 80px 10px 20px 10px;
+    border: 1px solid red;
+
+    text-align: center;
+
+    h1 {
+      font-size: 32px;
+    }
+
+    span {
+      font-weight: 300;
+    }
   }
 }

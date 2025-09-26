@@ -1,5 +1,8 @@
-/* header */
+body {
+  background-color: #ffdcdc;
+}
 
+/* header */
 header {
   display: flex;
   align-items: center;
@@ -7,6 +10,8 @@ header {
   height: 50px;
   background-color: #B95E82;
   padding: 0px 10px;
+
+  z-index: 999;
 }
 
 
@@ -15,12 +20,11 @@ header {
   align-items: center;
   justify-content: center;
   gap: 10px;
-}
 
-
-.logo p {
-  font-weight: 700;
-  color: white;
+  p {
+    font-weight: 700;
+    color: white;
+  }
 }
 
 /* navbar */
@@ -52,10 +56,7 @@ nav ul li a:hover {
 }
 
 /* footer */
-
 footer {
-  position: fixed;
-  bottom: 0;
 
   width: 100%;
   height: 50px;
@@ -66,22 +67,15 @@ footer {
 
   background-color: #B95E82;
 
+  p {
+    color: white;
+    font-weight: 300;
+  }
 
-}
-
-footer p {
-  color: white;
-  font-weight: 300;
-}
-
-footer span {
-  color: #87284E;
-  font-weight: 400;
-}
-
-.logo p {
-  font-weight: 700;
-  color: white;
+  span {
+    color: #87284E;
+    font-weight: 400;
+  }
 }
 
 /* responsive design */
@@ -89,10 +83,13 @@ footer span {
 
   /* header */
   header {
-    flex-direction: column;
+    position: fixed;
+    width: 100%;
     height: auto;
-
+    top: 0;
+    flex-direction: column;
     align-items: inherit;
+    left: -19px
   }
 
   .logo p {
@@ -113,6 +110,7 @@ footer span {
     background-color: inherit;
   }
 
+  /* footer */
   footer {
     font-size: 0.75em;
   }
