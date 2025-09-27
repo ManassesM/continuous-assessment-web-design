@@ -52,6 +52,7 @@ nav ul li a:hover {
 
 /* footer */
 footer {
+  border: 1px solid #B95E82;
   width: 100%;
   padding: 0 120px 0 120px;
 

@@ -40,7 +40,6 @@
 
 /* main section */
 .main-section {
-  /* border: 1px solid red; */
   margin-top: 40px;
   margin: 80px 120px 20px 120px;
   color: #87284E;
@@ -49,6 +48,12 @@
     font-size: 65px;
   }
 
+  #sub-text {
+    margin: 30px 0 10px 0;
+    font-size: 30px;
+  }
+
+
   >span {
     font-size: 30px;
   }
@@ -56,12 +61,64 @@
 
 /* featured */
 .featured-layout {
-  /* border: 1px solid green; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 10px;
+  gap: 10px 30px;
 }
 
-.featured-card {
-  border: 1px solid orange;
+.featured-card-container {
+  border: 1px solid #87284E;
   margin-top: 10px;
+  border-radius: 15px;
+
+  .card-banner-img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+}
+
+.featured-card-content {
+  margin: 0 24px 12px 24px;
+  text-align: center;
+
+  .info-line-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+  }
+
+  .info-line-2 {
+    display: flex;
+    align-items: center;
+    height: 20px;
+  }
+
+  .card-description {
+    width: 85%;
+    text-align: left;
+  }
+
+  .view-package-btn {
+    background-color: #87284E;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 10px;
+    width: 80%;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(1.25);
+      transition-property: filter;
+      transition-duration: 0.25s;
+    }
+  }
 }
 
 
@@ -81,8 +138,6 @@
   /* main section */
   .main-section {
     margin: 80px 10px 20px 10px;
-    /* border: 1px solid red; */
-
     text-align: center;
 
     h1 {
@@ -97,62 +152,26 @@
 
   /* featured */
   .featured-layout {
-    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 
   .featured-card-container {
-    border: 1px solid #87284E;
-    margin-top: 10px;
-    border-radius: 15px;
-
-
     .card-banner-img {
-      width: 100%;
       max-height: 200px;
-      object-fit: cover;
-
-      border-top-left-radius: 15px;
-      border-top-right-radius: 15px;
     }
   }
 
   .featured-card-content {
-    margin: 0 24px 12px 24px;
-
-    .info-line-1 {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 30px;
-    }
-
-    .info-line-2 {
-      display: flex;
-      align-items: center;
-      height: 20px;
-    }
-
     .card-description {
-      width: 85%;
       text-align: left;
       font-weight: 300;
     }
 
     .view-package-btn {
-      background-color: #87284E;
-      color: white;
-      border-radius: 5px;
+      width: 65%;
       padding: 5px 10px;
-      width: 60%;
-      text-transform: uppercase;
-
-      cursor: pointer;
-    }
-
-    .view-package-btn:hover {
-      filter: brightness(1.25);
-      transition-property: filter;
-      transition-duration: 0.25s;
     }
   }
 }
