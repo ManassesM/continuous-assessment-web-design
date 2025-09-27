@@ -41,12 +41,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #ddd;
+  color: #b1b1b1;
 }
 
 .active {
   pointer-events: none;
-  background-color: #87284E;
   color: #ddd;
   border-radius: 0.25em;
 }
@@ -54,8 +53,6 @@ nav ul li a:hover {
 /* footer */
 footer {
   width: 100%;
-  border: 1px solid black;
-
   padding: 0 120px 0 120px;
 
   background-color: #B95E82;
@@ -154,7 +151,7 @@ footer {
 
   nav ul li a {
     padding: inherit;
-    
+
     .active {
       background-color: inherit;
     }
@@ -166,6 +163,9 @@ footer {
   footer {
     font-size: 0.75em;
     padding: 0;
+
+    border: 1px solid #B95E82;
+    margin-top: 10px;
 
     #footer-logo {
       font-size: 25px;
