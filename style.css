@@ -80,6 +80,11 @@
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
   }
+
+
+  &:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
 }
 
 .featured-card-content {
