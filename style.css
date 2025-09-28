@@ -1,182 +1,42 @@
 /* main content */
-.main-content {
-  min-height: 100vh;
-}
-
-/* main-banner */
-.main-banner {
-  position: relative;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
+.banner {
   height: 60vh;
-  padding: 0 20px;
 
-  background-color: #ffb9b9;
-  background-image: url("/assets/rio-banner.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  p {
-    font-size: 30px;
-    background-color: #87284E;
-    color: white;
-    text-align: center;
-    padding: 20px;
+  img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    border-bottom: 5px solid #87284E;
   }
 }
 
-.banner-text {
-  position: absolute;
-  bottom: 0;
-  transform: translateY(50%);
-  width: 50%;
+.primary-text {
+  background-color: #87284E;
+  color: white;
 }
 
-
-
-/* main section */
-.main-section {
-  margin-top: 40px;
-  margin: 80px 120px 20px 120px;
+.main-content {
   color: #87284E;
 
-  h1 {
-    font-size: 65px;
-  }
-
-  #sub-text {
-    margin: 30px 0 10px 0;
-    font-size: 30px;
-  }
-
-
-  >span {
-    font-size: 30px;
-  }
-}
-
-/* featured */
-.featured-layout {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 0 10px;
-  gap: 10px 30px;
-}
-
-.featured-card-container {
-  border: 1px solid #87284E;
-  margin-top: 10px;
-  border-radius: 15px;
-
-  .card-banner-img {
-    width: 100%;
-    max-height: 300px;
-    object-fit: cover;
-
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-  }
-
-
-  &:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-}
-
-.featured-card-content {
-  margin: 0 24px 12px 24px;
-  text-align: center;
-
-  .info-line-1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 30px;
-  }
-
-  .info-line-2 {
-    display: flex;
-    align-items: center;
-    height: 20px;
-  }
-
-  .card-description {
-    width: 85%;
-    text-align: left;
-  }
-
-  .view-package-btn {
-    background-color: #87284E;
-    color: white;
-    border-radius: 5px;
-    padding: 10px 10px;
-    width: 80%;
-    text-transform: uppercase;
-    cursor: pointer;
-
+  .card {
     &:hover {
-      filter: brightness(1.25);
-      transition-property: filter;
-      transition-duration: 0.25s;
-    }
-  }
-}
-
-
-/* responsive design */
-@media (max-width: 500px) {
-
-  /* main content */
-  .main-content {
-    margin-top: 85px;
-  }
-
-  /* main banner */
-  .main-banner p {
-    font-weight: 100;
-  }
-
-  /* main section */
-  .main-section {
-    margin: 80px 10px 20px 10px;
-    text-align: center;
-
-    h1 {
-      font-size: 32px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
-    span {
-      font-weight: 300;
-    }
-  }
-
-
-  /* featured */
-  .featured-layout {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .featured-card-container {
-    .card-banner-img {
-      max-height: 200px;
-    }
-  }
-
-  .featured-card-content {
-    .card-description {
-      text-align: left;
-      font-weight: 300;
+    img {
+      height: 20vh;
+      object-fit: cover;
     }
 
-    .view-package-btn {
-      width: 65%;
-      padding: 5px 10px;
+    .btn {
+      background-color: #87284E;
+      color: white;
+
+      &:hover {
+        background-color: #87284E;
+        color: white;
+        filter: brightness(1.25);
+      }
     }
   }
 }

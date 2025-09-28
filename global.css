@@ -1,0 +1,26 @@
+/* navbar */
+.nav-item {
+  a {
+    color: white;
+
+    &:hover {
+      color: #b1b1b1;
+    }
+  }
+}
+
+/* header */
+.header {
+  background-color: #B95E82;
+  color: white;
+
+  p {
+    font-weight: 700;
+  }
+}
+
+/* footer */
+.footer {
+  background-color: #B95E82;
+  color: white;
+}

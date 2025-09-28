@@ -1,203 +1,295 @@
 <!-- 
 @Author: Manasses Souza 24285421
-Date: 24/09/25
-Version: 1.0 
+Date: 27/09/25
+Version: 2.0 (with Bootstrap) 
+index.html
 -->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Home</title>
+		<title>Travel Explorer | Home</title>
 
 		<!-- favicon -->
 		<link rel="icon" type="image/x-icon" href="/assets/plane.png" />
 
-		<!-- google fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700&display=swap"
-			rel="stylesheet"
-		/>
-
 		<!-- css -->
-		<link rel="stylesheet" href="/css/reset.css" />
-		<link rel="stylesheet" href="/css/global.css" />
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="/global.css" />
+		<link rel="stylesheet" href="/style.css" />
+
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+			crossorigin="anonymous"
+		/>
 	</head>
 	<body>
-		<!-- header -->
-		<header>
-			<div class="logo">
-				<img src="/assets/plane.png" alt="Travel Explorer logo" />
-				<p>Travel Explorer</p>
-			</div>
-
-			<nav>
-				<ul>
-					<li>
-						<a href="#" class="active">HOME</a>
-					</li>
-					<li>
-						<a href="/pages/destinations/destinations.html">DESTINATIONS</a>
-					</li>
-					<li>
-						<a href="/pages/contactus/contactus.html"> CONTACT US</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
-		<!-- main content -->
-		<div class="main-content">
-			<section class="main-banner">
-				<div class="banner-text">
-					<p>export the <b>explorer</b> in yourself</p>
+		<!-- ########## header ########## -->
+		<div class="header">
+			<div class="px-4 py-2 d-sm-flex justify-content-sm-between">
+				<div class="d-flex align-items-center justify-content-center gap-2">
+					<img src="/assets/plane.png" alt="Travel Explorer logo" />
+					<p class="m-0">Travel Explorer</p>
 				</div>
-			</section>
-			<section class="main-section">
-				<h1>Find your next stay</h1>
-				<span
-					>Discover our most popular travel packages, carefully curated for
-					unforgettable experience
-				</span>
-				<h2 id="sub-text">Featured Destinations</h2>
-				<section class="featured-layout">
-          <!-- featuring Dublin -->
-					<div class="featured-card-container">
-						<img
-							src="/assets/travel-card/dublin/dublin1.jpg"
-							alt="Image of Dublin City"
-							class="card-banner-img"
-						/>
-						<div class="featured-card-content">
-							<div class="info-line-1">
-								<h4 class="card-title">The Temple Bar</h6>
-								<h4 class="card-price">&#8364 2,399</h4>
-							</div>
+				<div class="d-flex justify-content-center">
+					<ul class="nav">
+						<li class="nav-item">
+							<a class="nav-link disabled" href="#">HOME</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/pages/destinations.html"
+								>DESTINATIONS</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/pages/contact_us.html">CONTACT US</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--closing header-->
 
-							<div class="info-line-2">
-                <span class="location-icon">📍</span>
-								<p class="card-location">Dublin, Ireland</p>
-							</div>
+		<!-- banner carousel -->
+		<div class="banner carousel slide" data-bs-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img
+						class="img-fluid"
+						src="/assets/home-carousel/rio.jpg"
+						class="d-block w-100"
+						alt="image of Rio de Janeiro"
+					/>
+				</div>
+				<div class="carousel-item">
+					<img
+						class="img-fluid"
+						src="/assets/home-carousel/rome.jpg"
+						class="d-block w-100"
+						alt="image of Barcelona"
+					/>
+				</div>
+				<div class="carousel-item">
+					<img
+						class="img-fluid"
+						src="/assets/home-carousel/denmark.jpg"
+						class="d-block w-100"
+						alt="image of Dubai"
+					/>
+				</div>
+			</div>
+		</div>
+		<!-- closing banner carousel -->
 
-							<p class="card-description">Discover the heart of Ireland, from historic pubs and literary legends to medieval castles and the vibrant Temple Bar district.</p>
-
-							<button class="view-package-btn">view package</button>
-						</div>
-					</div>
-          <!-- featuring Copenhagen -->
-          <div class="featured-card-container">
-						<img
-							src="/assets/travel-card/copenhagen/copenhagen3.jpg"
-							alt="Image of Copenhagen"
-							class="card-banner-img"
-						/>
-						<div class="featured-card-content">
-							<div class="info-line-1">
-								<h4 class="card-title">Nyhavn Harbor</h6>
-								<h4 class="card-price">&#8364 2,799</h4>
-							</div>
-
-							<div class="info-line-2">
-								<span class="location-icon">📍</span>
-								<p class="card-location">Copenhagen, Dennmark</p>
-							</div>
-
-							<p class="card-description">Experience Scandinavian charm and hygge in the happiest city. Explore colorful Nyhavn and bicycle through its elegant, historic streets.</p>
-
-							<button class="view-package-btn">view package</button>
-						</div>
-					</div>
-          <!-- featuring Rio de Janeiro -->
-      		<div class="featured-card-container">
-						<img
-							src="/assets/travel-card/rio/rio1.jpg"
-							alt="Image of Dublin City"
-							class="card-banner-img"
-						/>
-						<div class="featured-card-content">
-							<div class="info-line-1">
-								<h4 class="card-title">Corcovado</h6>
-								<h4 class="card-price">&#8364 2,999</h4>
-							</div>
-
-							<div class="info-line-2">
-								<span class="location-icon">📍</span>
-								<p class="card-location">Rio de Janeiro, Brazil</p>
-							</div>
-
-							<p class="card-description">Sun-drenched beaches, samba rhythms, and the iconic Christ the Redeemer offering panoramic views.</p>
-
-							<button class="view-package-btn">view package</button>
-						</div>
-					</div>
-				</section>
+		<div class="position-relative pb-5">
+			<section
+				class="primary-text position-absolute top-0 start-50 translate-middle"
+			>
+				<h1 class="text-center m-2 m-sm-4">
+					export the <b>explorer</b> in yourself
+				</h1>
 			</section>
 		</div>
-		<!-- footer -->
-		<footer>
-			<div id="footer-logo">Travel Explorer</div>
-			<section id="footer-nav">
-				<div class="footer-col">
-					<ul>
-						<li class="li-title">Company</li>
-						<li class="li-link"><a href="#"> About</a></li>
-						<li class="li-link"><a href="#"> Jobs</a></li>
-						<li class="li-link"><a href="#"> List your property</a></li>
+
+		<!-- ########## main content ########## -->
+		<div class="main-content container mt-5">
+			<div class="container text-center text-lg-start my-3">
+				<h3 class="fs-1">Find your next stay</h3>
+				<span class="fs-2">
+					Discover our most popular travel packages, carefully curated for
+					unforgettable experience
+				</span>
+			</div>
+
+			<div class="container text-center text-lg-start">
+				<h3 class="fs-1">Featured Destinations</h3>
+			</div>
+
+			<!-- featured destinations -->
+			<div class="container-fluid my-3">
+				<div class="row g-3">
+					<div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch">
+						<div class="card">
+							<img
+								class="card-img-top"
+								src="/assets/home-carousel/rio.jpg"
+								alt="card image of Rio de Janeiro"
+							/>
+							<div class="card-body d-flex flex-column justify-content-between">
+								<div class="my-2">
+									<h5 class="card-title">Rio de Janeiro</h5>
+								</div>
+								<p class="card-text">
+									Famed Brazilian city defined by its dramatic landscape of
+									granite peaks and sweeping beaches.
+								</p>
+								<div class="d-grid gap-2">
+									<button class="btn" type="button">VIEW PACKAGE</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch">
+						<div class="card">
+							<img
+								class="card-img-top"
+								src="/assets/home-carousel/rome.jpg"
+								alt="card image of Rome"
+							/>
+							<div class="card-body d-flex flex-column justify-content-between">
+								<div class="my-2">
+									<h5 class="card-title">Rome</h5>
+									<p class="card-text">
+										Italy's capital and the heart of the ancient Roman Empire.
+										It hosts Vatican City within its borders.
+									</p>
+								</div>
+								<div class="d-grid gap-2">
+									<button class="btn" type="button">VIEW PACKAGE</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch">
+						<div class="card">
+							<img
+								class="card-img-top"
+								src="/assets/home-carousel/denmark.jpg"
+								alt="card image of Denmark"
+							/>
+							<div class="card-body d-flex flex-column justify-content-between">
+								<div class="my-2">
+									<h5 class="card-title">Denmark</h5>
+									<p class="card-text">
+										A flat Scandinavian country spanning the Jutland peninsula
+										and over 400 islands.
+									</p>
+								</div>
+								<div class="d-grid gap-2">
+									<button class="btn" type="button">VIEW PACKAGE</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch">
+						<div class="card">
+							<img
+								class="card-img-top"
+								src="/assets/home-carousel/tokyo.jpg"
+								alt="card image of Tokyo"
+							/>
+							<div class="card-body d-flex flex-column justify-content-between">
+								<div class="my-2">
+									<h5 class="card-title">Tokyo</h5>
+									<p class="card-text">
+										Japan's bustling capital, seamlessly blending ancient
+										temples with neon-lit skyscrapers.
+									</p>
+								</div>
+								<div class="d-grid gap-2">
+									<button class="btn" type="button">VIEW PACKAGE</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- closing main content-->
+
+		<!-- ########## footer ########## -->
+		<div class="footer px-4 rounded-top">
+			<footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-4">
+				<div class="col d-flex align-items-center mb-3">
+					<img
+						class="img-fluid"
+						src="/assets/plane.png"
+						alt="Travel Explorer logo"
+					/>
+					<p class="my-0 mx-2">© 2025 Travel Explorer, Inc. All rights reserved</p>
+				</div>
+				<div class="col mb-3">
+					<h5>Company</h5>
+					<ul class="nav flex-column">
+						<li class="nav-item mb-2">
+							<a class="nav-link p-0" href="#">About</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a class="nav-link p-0" href="#">Jobs</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a class="nav-link p-0" href="#">List your property</a>
+						</li>
 					</ul>
 				</div>
-				<div class="footer-col">
-					<ul>
-						<li class="li-title">Explore</li>
-						<li class="li-link"><a href="#"> Ireland travel guide</a></li>
-						<li class="li-link"><a href="#"> Hotels in Ireland</a></li>
-						<li class="li-link"><a href="#"> Holiday rentals in Ireland</a></li>
-						<li class="li-link"><a href="#"> All accommodation types</a></li>
+				<div class="col mb-3">
+					<ul class="nav flex-column">
+						<h5>Explore</h5>
+						<ul class="nav flex-column">
+							<li class="nav-item mb-2">
+								<a class="nav-link p-0" href="#">Ireland travel guide</a>
+							</li>
+							<li class="nav-item mb-2">
+								<a class="nav-link p-0" href="#">Hotels in Ireland</a>
+							</li>
+							<li class="nav-item mb-2">
+								<a class="nav-link p-0" href="#">Holiday rentals in Ireland</a>
+							</li>
+							<li class="nav-item mb-2">
+								<a class="nav-link p-0" href="#">All accommodation types</a>
+							</li>
+						</ul>
 					</ul>
 				</div>
-				<div class="footer-col">
-					<ul>
-						<li class="li-title">Policies</li>
-						<li class="li-link">
-							<a href="#"> General terms and conditions</a>
+				<div class="col mb-3">
+					<ul class="nav flex-column">
+						<h5>Policies</h5>
+						<li class="nav-item mb-2">
+							<a class="nav-link p-0" href="#"> General terms and conditions</a>
 						</li>
-						<li class="li-link"><a href="#"> Accessibility</a></li>
-						<li class="li-link"><a href="#"> Privacy Statement</a></li>
-						<li class="li-link"><a href="#"> Content guidelines</a></li>
-					</ul>
-				</div>
-				<div class="footer-col">
-					<ul>
-						<li class="li-title">Help</li>
-						<li class="li-link"><a href="#"> Support</a></li>
-						<li class="li-link">
-							<a href="#"> Change or cancel your booking</a>
+						<li class="nav-item mb-2">
+							<a class="nav-link p-0" href="#"> Accessibility</a>
 						</li>
-						<li class="li-link">
-							<a href="#"> Refund process and timelines</a>
+						<li class="nav-item mb-2">
+							<a class="nav-link p-0" href="#"> Privacy Statement</a>
 						</li>
-						<li class="li-link">
-							<a href="#"> International travel documents</a>
+						<li class="nav-item mb-2">
+							<a class="nav-link p-0" href="#"> Content guidelines</a>
 						</li>
 					</ul>
 				</div>
-			</section>
-			<hr />
-			<section id="bottom">
-				<p>
-					Travel Explorer, Inc. is not responsible for content on external Web
-					sites.
-				</p>
-				<p>
-					© 2025 Travel Explorer, Inc., a Travel Explorer Ficional Group
-					company. All rights reserved. Travel Explorer and the Travel Explorer
-					Logo are fictional trademarks and are not registered trademarks of
-					Travel Explorer, Inc.
-				</p>
-				<hr />
-				<p>Design by <span>Manasses Souza</span> 24285421</p>
-			</section>
-		</footer>
+				<div class="col mb-3">
+					<ul class="nav flex-column">
+						<h5>Help</h5>
+						<li class="nav-item mb-2">
+							<a class="nav-link p-0" href="#"> Support</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a class="nav-link p-0" href="#">
+								Change or cancel your booking</a
+							>
+						</li>
+						<li class="nav-item mb-2">
+							<a class="nav-link p-0" href="#"> Refund process and timelines</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a class="nav-link p-0" href="#">
+								International travel documents</a
+							>
+						</li>
+					</ul>
+				</div>
+			</footer>
+		</div>
+		<!-- Bootstrap JS -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+			crossorigin="anonymous"
+		></script>
 	</body>
 </html>
