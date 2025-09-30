@@ -1,0 +1,38 @@
+input[type="text"] {
+  background-image: url("/assets/icons/search_icon.svg");
+  background-repeat: no-repeat;
+  background-position: 10px 6px;
+  padding-left: 40px;
+
+  &::placeholder {
+    color: #B95E82;
+  }
+}
+
+.text-s {
+  color: #87284E;
+}
+
+.text-p {
+  color: #B95E82;
+}
+
+.card-footer {
+  background-color: inherit;
+
+  .custom-btn {
+    background-color: #B95E82;
+    color: white;
+
+    &:hover {
+      background-color: #87284E;
+      color: white;
+      filter: brightness(1.25);
+    }
+  }
+}
+
+.custom-card-img {
+  height: 40vh;
+  object-fit: cover;
+}
