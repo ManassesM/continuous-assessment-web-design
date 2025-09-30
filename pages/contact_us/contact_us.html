@@ -1,22 +1,33 @@
 <!-- 
 @Author: Manasses Souza 24285421
-Date: 27/09/25
-Version: 2.0 (with Bootstrap) 
-destinations.html
+Date: 24/09/25
+Version: 1.0 
 -->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Travel Explorer | Destinations</title>
+		<title>Contact Us</title>
 
 		<!-- favicon -->
-		<link rel="icon" type="image/x-icon" href="/assets/plane.png" />
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="/assets/favicon/plane_icon.svg"
+		/>
+
+		<!-- google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
 
 		<!-- css -->
 		<link rel="stylesheet" href="/global.css" />
-		<link rel="stylesheet" href="/style.css" />
+		<link rel="stylesheet" href="style.css" />
 
 		<!-- Bootstrap CSS -->
 		<link
@@ -29,30 +40,37 @@ destinations.html
 	<body>
 		<!-- ########## header ########## -->
 		<div class="header">
+			<!-- logo -->
 			<div class="px-4 py-2 d-sm-flex justify-content-sm-between">
 				<div class="d-flex align-items-center justify-content-center gap-2">
-					<img src="/assets/plane.png" alt="Travel Explorer logo" />
+					<img
+						src="/assets/favicon/plane_icon.svg"
+						alt="Travel Explorer logo"
+					/>
 					<p class="m-0">Travel Explorer</p>
 				</div>
+				<!-- navbar -->
 				<div class="d-flex justify-content-center">
 					<ul class="nav">
 						<li class="nav-item">
 							<a class="nav-link" href="/index.html">HOME</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link disabled" href="/pages/destinations.html"
-								>DESTINATIONS</a
-							>
+							<a class="nav-link" href="/pages/destinations/destinations.html">
+								DESTINATIONS
+							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="/pages/contact_us.html">CONTACT US</a>
+							<a class="nav-link disabled" href="#"> CONTACT US </a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
 		<!--closing header-->
-		Destinations Page
+
+		<!-- main content -->
+		<div class="container">Contact Us page</div>
 
 		<!-- ########## footer ########## -->
 		<div class="footer px-4 rounded-top">
@@ -60,7 +78,7 @@ destinations.html
 				<div class="col d-flex align-items-center mb-3">
 					<img
 						class="img-fluid"
-						src="/assets/plane.png"
+						src="/assets/favicon/plane_icon.svg"
 						alt="Travel Explorer logo"
 					/>
 					<p class="my-0 mx-2">
@@ -140,6 +158,8 @@ destinations.html
 				</div>
 			</footer>
 		</div>
+		<!-- closing footer-->
+
 		<!-- Bootstrap JS -->
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

@@ -12,7 +12,19 @@ index.html
 		<title>Travel Explorer | Home</title>
 
 		<!-- favicon -->
-		<link rel="icon" type="image/x-icon" href="/assets/plane.png" />
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="/assets/favicon/plane_icon.svg"
+		/>
+
+		<!-- google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
 
 		<!-- css -->
 		<link rel="stylesheet" href="/global.css" />
@@ -29,23 +41,30 @@ index.html
 	<body>
 		<!-- ########## header ########## -->
 		<div class="header">
+			<!-- logo -->
 			<div class="px-4 py-2 d-sm-flex justify-content-sm-between">
 				<div class="d-flex align-items-center justify-content-center gap-2">
-					<img src="/assets/plane.png" alt="Travel Explorer logo" />
+					<img
+						src="/assets/favicon/plane_icon.svg"
+						alt="Travel Explorer logo"
+					/>
 					<p class="m-0">Travel Explorer</p>
 				</div>
+				<!-- navbar -->
 				<div class="d-flex justify-content-center">
 					<ul class="nav">
 						<li class="nav-item">
 							<a class="nav-link disabled" href="#">HOME</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="/pages/destinations.html"
-								>DESTINATIONS</a
-							>
+							<a class="nav-link" href="/pages/destinations/destinations.html">
+								DESTINATIONS
+							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="/pages/contact_us.html">CONTACT US</a>
+							<a class="nav-link" href="/pages/contact_us/contact_us.html">
+								CONTACT US
+							</a>
 						</li>
 					</ul>
 				</div>
@@ -104,12 +123,12 @@ index.html
 				</span>
 			</div>
 
-			<div class="container text-center text-lg-start">
+			<div class="container text-center text-lg-start my-5">
 				<h3 class="fs-1">Featured Destinations</h3>
 			</div>
 
 			<!-- featured destinations -->
-			<div class="container-fluid my-3">
+			<div class="container-fluid my-5">
 				<div class="row g-3">
 					<div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch">
 						<div class="card">
@@ -197,8 +216,60 @@ index.html
 					</div>
 				</div>
 			</div>
-		</div>
 
+			<!-- why choose travel explorer -->
+			<div class="container text-center my-5">
+				<h3 class="fs-1">Why choose Travel Explorer?</h3>
+				<span class="fs-2">
+					We make your travel dreams come true with our expert planning and
+					exceptional service
+				</span>
+			</div>
+
+			<div class="cotainer-fluid d-md-flex p-4">
+				<div
+					class="container my-3 py-2 d-flex flex-column gap-2 align-items-center"
+				>
+					<img
+						class="svg-icon"
+						src="/assets/svg/group-icon.svg"
+						alt="group icon"
+					/>
+					<p class="fw-medium">Expert Guides</p>
+					<p class="m-0 text-center">
+						Professional local guides who know every hidden gem and cultural
+						secret
+					</p>
+				</div>
+				<div
+					class="container my-3 py-2 d-flex flex-column gap-2 align-items-center"
+				>
+					<img
+						class="svg-icon"
+						src="/assets/svg/clock-icon.svg"
+						alt="clock icon"
+					/>
+					<p class="fw-medium">24/7 Support</p>
+					<p class="m-0 text-center">
+						Round-the-clock assistance to ensure your journey is smooth and
+						worry-free
+					</p>
+				</div>
+				<div
+					class="container my-3 py-2 d-flex flex-column gap-2 align-items-center"
+				>
+					<img
+						class="svg-icon"
+						src="/assets/svg/star.icon.svg"
+						alt="star icon"
+					/>
+					<p class="fw-medium">Best Value</p>
+					<p class="m-0 text-center">
+						Premium experiences at competitive prices with no hidden fees
+					</p>
+				</div>
+			</div>
+		</div>
 		<!-- closing main content-->
 
 		<!-- ########## footer ########## -->
@@ -207,7 +278,7 @@ index.html
 				<div class="col d-flex align-items-center mb-3">
 					<img
 						class="img-fluid"
-						src="/assets/plane.png"
+						src="/assets/favicon/plane_icon.svg"
 						alt="Travel Explorer logo"
 					/>
 					<p class="my-0 mx-2">
@@ -287,6 +358,8 @@ index.html
 				</div>
 			</footer>
 		</div>
+		<!-- closing footer-->
+
 		<!-- Bootstrap JS -->
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

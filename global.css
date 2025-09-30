@@ -1,4 +1,9 @@
 /* navbar */
+.svg-icon {
+  width: 50px;
+  height: 50px;
+}
+
 .nav-item {
   a {
     color: white;
@@ -17,6 +22,11 @@
   p {
     font-weight: 700;
   }
+}
+
+/* main content */
+.main-content {
+  color: #87284E;
 }
 
 /* footer */

@@ -15,28 +15,36 @@
   color: white;
 }
 
-.main-content {
-  color: #87284E;
 
-  .card {
+.card {
+
+  &:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .card-body {
+    h5 {
+      color: #87284E;
+    }
+
+    p {
+      color: #B95E82;
+    }
+  }
+
+  img {
+    height: 20vh;
+    object-fit: cover;
+  }
+
+  .btn {
+    background-color: #87284E;
+    color: white;
+
     &:hover {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-
-    img {
-      height: 20vh;
-      object-fit: cover;
-    }
-
-    .btn {
       background-color: #87284E;
       color: white;
-
-      &:hover {
-        background-color: #87284E;
-        color: white;
-        filter: brightness(1.25);
-      }
+      filter: brightness(1.25);
     }
   }
 }
