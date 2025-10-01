@@ -39,26 +39,29 @@ input[type="text"] {
 }
 
 .custom-card-trending {
-
+  cursor: pointer;
   h5,
   p {
     color: white;
+    text-shadow: 0px 1px 4px #000047;
   }
 
   img {
     width: 100%;
     height: 350px;
     object-fit: cover;
-
-
   }
+}
 
-  ::after {
-    content: "";
-    position: absolute;
-    inset: 0;
+.custom-card-trending:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
-    box-shadow: 0px 104px 66px -53px rgba(0, 0, 0, 0.47) inset;
+.custom-card-explore {
+  img {
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
