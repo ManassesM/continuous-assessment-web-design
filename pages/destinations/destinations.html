@@ -1,7 +1,7 @@
 <!-- 
 @Author: Manasses Souza 24285421
-Date: 24/09/25
-Version: 1.0 
+Date: 01/10/25
+Version: 2.0 
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +14,7 @@ Version: 1.0
 		<link
 			rel="icon"
 			type="image/x-icon"
-			href="/assets/favicon/plane_icon.svg"
+			href="../../assets/favicon/plane_icon.svg"
 		/>
 
 		<!-- google fonts -->
@@ -25,10 +25,6 @@ Version: 1.0
 			rel="stylesheet"
 		/>
 
-		<!-- css -->
-		<link rel="stylesheet" href="/global.css" />
-		<link rel="stylesheet" href="style.css" />
-
 		<!-- Bootstrap CSS -->
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -36,6 +32,10 @@ Version: 1.0
 			integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
 			crossorigin="anonymous"
 		/>
+
+		<!-- css -->
+		<link rel="stylesheet" href="../../global.css" />
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
 		<!-- ########## header ########## -->
@@ -44,7 +44,7 @@ Version: 1.0
 			<div class="px-4 py-2 d-sm-flex justify-content-sm-between">
 				<div class="d-flex align-items-center justify-content-center gap-2">
 					<img
-						src="/assets/favicon/plane_icon.svg"
+						src="../../assets/favicon/plane_icon.svg"
 						alt="Travel Explorer logo"
 					/>
 					<p class="m-0">Travel Explorer</p>
@@ -53,13 +53,13 @@ Version: 1.0
 				<div class="d-flex justify-content-center">
 					<ul class="nav">
 						<li class="nav-item">
-							<a class="nav-link" href="/index.html">HOME</a>
+							<a class="nav-link" href="../../index.html">HOME</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link disabled" href="#"> DESTINATIONS </a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="/pages/contact_us/contact_us.html">
+							<a class="nav-link" href="../contact_us/contact_us.html">
 								CONTACT US
 							</a>
 						</li>
@@ -79,13 +79,10 @@ Version: 1.0
 					placeholder="Filter destinations..."
 				/>
 			</div>
-
 			<!-- grid destinations -->
-
 			<div class="container text-center text-sm-start my-5">
-				<h3 class="fs-1 text-p">Best deals for the week</h3>
+				<h3 class="fs-1 custom-text-p">Best deals for the week</h3>
 			</div>
-
 			<div class="container-fluid my-3">
 				<div class="row g-3">
 					<!-- barcelona -->
@@ -97,21 +94,21 @@ Version: 1.0
 									<div class="carousel-item active">
 										<img
 											class="d-block w-100 custom-card-img"
-											src="/assets/travel-card/barcelona/barcelona1.jpg"
+											src="../../assets/travel-card/barcelona/barcelona1.jpg"
 											alt="First slide"
 										/>
 									</div>
 									<div class="carousel-item">
 										<img
 											class="d-block w-100 custom-card-img"
-											src="/assets/travel-card/barcelona/barcelona2.jpg"
+											src="../../assets/travel-card/barcelona/barcelona2.jpg"
 											alt="Second slide"
 										/>
 									</div>
 									<div class="carousel-item">
 										<img
 											class="d-block w-100 custom-card-img"
-											src="/assets/travel-card/barcelona/barcelona3.jpg"
+											src="../../assets/travel-card/barcelona/barcelona3.jpg"
 											alt="Third slide"
 										/>
 									</div>
@@ -121,35 +118,44 @@ Version: 1.0
 							<!-- card body -->
 							<div class="card-body">
 								<div
-									class="container d-flex justify-content-between align-content-center py-1 text-p"
+									class="container d-flex justify-content-between align-content-center py-1 custom-text-p"
 								>
-									<h5 class="card-title m-0 fw-bold fs-3">Arc de Triomf</h5>
+									<h5 class="card-title m-0 fw-bold fs-3 custom-fs-sm">
+										Arc de Triomf
+									</h5>
 									<div class="d-flex flex-column align-items-end">
-										<h3 class="m-0 fw-bold fs-2">&#8364;2,999</h3>
-										<small class="fs-5 fw-normal text-decoration-line-through">
+										<h3 class="m-0 fw-bold fs-2 custom-fs-sm">&#8364;2,999</h3>
+										<small
+											class="fs-5 fw-normal text-decoration-line-through custom-fs-sm"
+										>
 											&#8364;3,999
 										</small>
 									</div>
 								</div>
-								<div class="container d-flex gap-2 text-p">
+								<div
+									class="container d-flex gap-2 align-items-center custom-text-p"
+								>
 									<img
-										src="/assets/icons/map-pin_icon.svg"
+										src="../../assets/icons/map-pin_icon.svg"
 										alt="map pin icon"
+										class="custom-icon-sm"
 									/>
-									<p class="m-0 fw-medium fs-5">Barcelona, Spain</p>
+									<p class="m-0 fw-medium fs-5 custom-fs-md">
+										Barcelona, Spain
+									</p>
 								</div>
-								<div class="container text-p">
-									<p class="card-text mx-1 my-2">
+								<div class="container custom-text-p">
+									<p class="card-text m-1">
 										Barcelona, the cosmopolitan capital of Spain's Catalonia
 										region, is known for its art and architecture.
 									</p>
 								</div>
 								<div
-									class="container my-3 mx-sm-2 d-flex justify-content-between text-p"
+									class="container my-3 mx-sm-2 d-flex justify-content-between"
 								>
 									<div class="d-flex gap-2">
 										<img
-											src="/assets/icons/calendar_icon.svg"
+											src="../../assets/icons/calendar_icon.svg"
 											alt="calendar icon"
 											class="d-sm-none d-lg-block"
 										/>
@@ -157,14 +163,14 @@ Version: 1.0
 									</div>
 									<div class="d-flex gap-2">
 										<img
-											src="/assets/icons/group-icon.svg"
+											src="../../assets/icons/group-icon.svg"
 											alt="group icon"
 											class="d-sm-none d-lg-block"
 										/>
 										<small class="fs-6">Max 2 people</small>
 									</div>
 								</div>
-								<div class="container card-text my-2">
+								<div class="container card-text my-2 custom-text-p">
 									<small class="text-muted"> Last updated 24 hours ago </small>
 								</div>
 								<!-- card footer -->
@@ -188,21 +194,21 @@ Version: 1.0
 									<div class="carousel-item active">
 										<img
 											class="d-block w-100 custom-card-img"
-											src="/assets/travel-card/cairo/cairo1.jpg"
+											src="../../assets/travel-card/cairo/cairo1.jpg"
 											alt="First slide"
 										/>
 									</div>
 									<div class="carousel-item">
 										<img
 											class="d-block w-100 custom-card-img"
-											src="/assets/travel-card/cairo/cairo2.jpg"
+											src="../../assets/travel-card/cairo/cairo2.jpg"
 											alt="Second slide"
 										/>
 									</div>
 									<div class="carousel-item">
 										<img
 											class="d-block w-100 custom-card-img"
-											src="/assets/travel-card/cairo/cairo3.jpg"
+											src="../../assets/travel-card/cairo/cairo3.jpg"
 											alt="Third slide"
 										/>
 									</div>
@@ -212,36 +218,41 @@ Version: 1.0
 							<!-- card body -->
 							<div class="card-body">
 								<div
-									class="container d-flex justify-content-between align-content-center py-1 text-p"
+									class="container d-flex justify-content-between align-content-center py-1 custom-text-p"
 								>
-									<h5 class="card-title m-0 fw-bold fs-3">
+									<h5 class="card-title m-0 fw-bold fs-3 custom-fs-sm">
 										The Great Pyramids
 									</h5>
 									<div class="d-flex flex-column align-items-end">
-										<h3 class="m-0 fw-bold fs-2">&#8364;2,499</h3>
-										<small class="fs-5 fw-normal text-decoration-line-through">
+										<h3 class="m-0 fw-bold fs-2 custom-fs-sm">&#8364;2,499</h3>
+										<small
+											class="fs-5 fw-normal text-decoration-line-through custom-fs-sm"
+										>
 											&#8364;2,999
 										</small>
 									</div>
 								</div>
-								<div class="container d-flex gap-2 text-p">
+								<div
+									class="container d-flex gap-2 align-items-center custom-text-p"
+								>
 									<img
-										src="/assets/icons/map-pin_icon.svg"
+										src="../../assets/icons/map-pin_icon.svg"
 										alt="map pin icon"
+										class="custom-icon-sm"
 									/>
-									<p class="m-0 fw-medium fs-5">Cairo, Egypt</p>
+									<p class="m-0 fw-medium fs-5 custom-fs-md">Cairo, Egypt</p>
 								</div>
-								<div class="container text-p">
-									<p class="card-text mx-1 my-2">
+								<div class="container custom-text-p">
+									<p class="card-text m-1">
 										Cairo, Egypt's sprawling capital, is set on the Nile River.
 									</p>
 								</div>
 								<div
-									class="container my-3 mx-sm-2 d-flex justify-content-between text-p"
+									class="container my-3 mx-sm-2 d-flex justify-content-between"
 								>
 									<div class="d-flex gap-2">
 										<img
-											src="/assets/icons/calendar_icon.svg"
+											src="../../assets/icons/calendar_icon.svg"
 											alt="calendar icon"
 											class="d-sm-none d-lg-block"
 										/>
@@ -249,14 +260,14 @@ Version: 1.0
 									</div>
 									<div class="d-flex gap-2">
 										<img
-											src="/assets/icons/group-icon.svg"
+											src="../../assets/icons/group-icon.svg"
 											alt="group icon"
 											class="d-sm-none d-lg-block"
 										/>
 										<small class="fs-6">Max 3 people</small>
 									</div>
 								</div>
-								<div class="container card-text my-2">
+								<div class="container card-text my-2 custom-text-p">
 									<small class="text-muted"> Last updated 48 hours ago </small>
 								</div>
 								<!-- card footer -->
@@ -280,21 +291,21 @@ Version: 1.0
 									<div class="carousel-item active">
 										<img
 											class="d-block w-100 custom-card-img"
-											src="/assets/travel-card/copenhagen/copenhagen1.jpg"
+											src="../../assets/travel-card/copenhagen/copenhagen1.jpg"
 											alt="First slide"
 										/>
 									</div>
 									<div class="carousel-item">
 										<img
 											class="d-block w-100 custom-card-img"
-											src="/assets/travel-card/copenhagen/copenhagen2.jpg"
+											src="../../assets/travel-card/copenhagen/copenhagen2.jpg"
 											alt="Second slide"
 										/>
 									</div>
 									<div class="carousel-item">
 										<img
 											class="d-block w-100 custom-card-img"
-											src="/assets/travel-card/copenhagen/copenhagen3.jpg"
+											src="../../assets/travel-card/copenhagen/copenhagen3.jpg"
 											alt="Third slide"
 										/>
 									</div>
@@ -304,36 +315,45 @@ Version: 1.0
 							<!-- card body -->
 							<div class="card-body">
 								<div
-									class="container d-flex justify-content-between align-content-center py-1 text-p"
+									class="container d-flex justify-content-between align-content-center py-1 custom-text-p"
 								>
-									<h5 class="card-title m-0 fw-bold fs-3">Rosenborg Castle</h5>
+									<h5 class="card-title m-0 fw-bold fs-3 custom-fs-sm">
+										Rosenborg Castle
+									</h5>
 									<div class="d-flex flex-column align-items-end">
-										<h3 class="m-0 fw-bold fs-2">&#8364;3,999</h3>
-										<small class="fs-5 fw-normal text-decoration-line-through">
+										<h3 class="m-0 fw-bold fs-2 custom-fs-sm">&#8364;3,999</h3>
+										<small
+											class="fs-5 fw-normal text-decoration-line-through custom-fs-sm"
+										>
 											&#8364;5,999
 										</small>
 									</div>
 								</div>
-								<div class="container d-flex gap-2 text-p">
+								<div
+									class="container d-flex gap-2 align-items-center custom-text-p"
+								>
 									<img
-										src="/assets/icons/map-pin_icon.svg"
+										src="../../assets/icons/map-pin_icon.svg"
 										alt="map pin icon"
+										class="custom-icon-sm"
 									/>
-									<p class="m-0 fw-medium fs-5">Copenhagen, Denmark</p>
+									<p class="m-0 fw-medium fs-5 custom-fs-md">
+										Copenhagen, Denmark
+									</p>
 								</div>
-								<div class="container text-p">
-									<p class="card-text mx-1 my-2">
+								<div class="container custom-text-p">
+									<p class="card-text m-1">
 										Copenhagen, Denmark's capital, sits on the coastal islands
 										of Zealand and Amager. It's linked to Malmo in southern
 										Sweden by the Öresund Bridge.
 									</p>
 								</div>
 								<div
-									class="container my-3 mx-sm-2 d-flex justify-content-between text-p"
+									class="container my-3 mx-sm-2 d-flex justify-content-between"
 								>
 									<div class="d-flex gap-2">
 										<img
-											src="/assets/icons/calendar_icon.svg"
+											src="../../assets/icons/calendar_icon.svg"
 											alt="calendar icon"
 											class="d-sm-none d-lg-block"
 										/>
@@ -341,14 +361,624 @@ Version: 1.0
 									</div>
 									<div class="d-flex gap-2">
 										<img
-											src="/assets/icons/group-icon.svg"
+											src="../../assets/icons/group-icon.svg"
 											alt="group icon"
 											class="d-sm-none d-lg-block"
 										/>
 										<small class="fs-6">Max 2 people</small>
 									</div>
 								</div>
-								<div class="container card-text my-2">
+								<div class="container card-text my-2 custom-text-p">
+									<small class="text-muted"> Last updated 24 hours ago </small>
+								</div>
+								<!-- card footer -->
+								<div class="card-footer">
+									<div class="d-grid gap-2">
+										<button class="btn custom-btn" type="button">
+											BOOK NOW
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- anchor tag -->
+					<div class="container text-center text-sm-start my-5">
+						<a class="fs-1 custom-text-p" href="#trending-destinations">
+							Want to jump to Trending Destinations?
+						</a>
+					</div>
+
+					<!-- dubai -->
+					<div class="col-12 col-sm-6 col-md-4 p-2 d-flex align-items-stretch">
+						<div class="card">
+							<!-- card img carousel  -->
+							<div class="carousel slide" data-bs-ride="carousel">
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img
+											class="d-block w-100 custom-card-img"
+											src="../../assets/travel-card/dubai/dubai1.jpg"
+											alt="First slide"
+										/>
+									</div>
+									<div class="carousel-item">
+										<img
+											class="d-block w-100 custom-card-img"
+											src="../../assets/travel-card/dubai/dubai2.jpg"
+											alt="Second slide"
+										/>
+									</div>
+									<div class="carousel-item">
+										<img
+											class="d-block w-100 custom-card-img"
+											src="../../assets/travel-card/dubai/dubai3.jpg"
+											alt="Third slide"
+										/>
+									</div>
+								</div>
+							</div>
+
+							<!-- card body -->
+							<div class="card-body">
+								<div
+									class="container d-flex justify-content-between align-content-center py-1 custom-text-p"
+								>
+									<h5 class="card-title m-0 fw-bold fs-3 custom-fs-sm">
+										Burj Khalifa
+									</h5>
+									<div class="d-flex flex-column align-items-end">
+										<h3 class="m-0 fw-bold fs-2 custom-fs-sm">&#8364;4,999</h3>
+										<small
+											class="fs-5 fw-normal text-decoration-line-through custom-fs-sm"
+										>
+											&#8364;4,999
+										</small>
+									</div>
+								</div>
+								<div
+									class="container d-flex gap-2 align-items-center custom-text-p"
+								>
+									<img
+										src="../../assets/icons/map-pin_icon.svg"
+										alt="map pin icon"
+										class="custom-icon-sm"
+									/>
+									<p class="m-0 fw-medium fs-5 custom-fs-md">
+										Dubai, United Arab Emirates
+									</p>
+								</div>
+								<div class="container custom-text-p">
+									<p class="card-text m-1">
+										Dubai is a city and emirate in the United Arab Emirates
+										known for luxury shopping, ultramodern architecture and a
+										lively nightlife scene.
+									</p>
+								</div>
+								<div
+									class="container my-3 mx-sm-2 d-flex justify-content-between"
+								>
+									<div class="d-flex gap-2">
+										<img
+											src="../../assets/icons/calendar_icon.svg"
+											alt="calendar icon"
+											class="d-sm-none d-lg-block"
+										/>
+										<small class="fs-6">5 days</small>
+									</div>
+									<div class="d-flex gap-2">
+										<img
+											src="../../assets/icons/group-icon.svg"
+											alt="group icon"
+											class="d-sm-none d-lg-block"
+										/>
+										<small class="fs-6">Max 2 people</small>
+									</div>
+								</div>
+								<div class="container card-text my-2 custom-text-p">
+									<small class="text-muted"> Last updated 12 hours ago </small>
+								</div>
+								<!-- card footer -->
+								<div class="card-footer">
+									<div class="d-grid gap-2">
+										<button class="btn custom-btn" type="button">
+											BOOK NOW
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- dublin -->
+					<div class="col-12 col-sm-6 col-md-4 p-2 d-flex align-items-stretch">
+						<div class="card">
+							<!-- card img carousel  -->
+							<div class="carousel slide" data-bs-ride="carousel">
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img
+											class="d-block w-100 custom-card-img"
+											src="../../assets/travel-card/dublin/dublin1.jpg"
+											alt="First slide"
+										/>
+									</div>
+									<div class="carousel-item">
+										<img
+											class="d-block w-100 custom-card-img"
+											src="../../assets/travel-card/dublin/dublin2.jpg"
+											alt="Second slide"
+										/>
+									</div>
+									<div class="carousel-item">
+										<img
+											class="d-block w-100 custom-card-img"
+											src="../../assets/travel-card/dublin/dublin3.jpg"
+											alt="Third slide"
+										/>
+									</div>
+								</div>
+							</div>
+
+							<!-- card body -->
+							<div class="card-body">
+								<div
+									class="container d-flex justify-content-between align-content-center py-1 custom-text-p"
+								>
+									<h5 class="card-title m-0 fw-bold fs-3 custom-fs-sm">
+										The Temple Bar
+									</h5>
+									<div class="d-flex flex-column align-items-end">
+										<h3 class="m-0 fw-bold fs-2 custom-fs-sm">&#8364;1,999</h3>
+										<small
+											class="fs-5 fw-normal text-decoration-line-through custom-fs-sm"
+										>
+											&#8364;2,499
+										</small>
+									</div>
+								</div>
+								<div
+									class="container d-flex gap-2 align-items-center custom-text-p"
+								>
+									<img
+										src="../../assets/icons/map-pin_icon.svg"
+										alt="map pin icon"
+										class="custom-icon-sm"
+									/>
+									<p class="m-0 fw-medium fs-5 custom-fs-md">Dublin, Ireland</p>
+								</div>
+								<div class="container custom-text-p">
+									<p class="card-text m-1">
+										Dublin, capital of the Republic of Ireland, is on Ireland's
+										east coast at the mouth of the River Liffey.
+									</p>
+								</div>
+								<div
+									class="container my-3 mx-sm-2 d-flex justify-content-between"
+								>
+									<div class="d-flex gap-2">
+										<img
+											src="../../assets/icons/calendar_icon.svg"
+											alt="calendar icon"
+											class="d-sm-none d-lg-block"
+										/>
+										<small class="fs-6">3 days</small>
+									</div>
+									<div class="d-flex gap-2">
+										<img
+											src="../../assets/icons/group-icon.svg"
+											alt="group icon"
+											class="d-sm-none d-lg-block"
+										/>
+										<small class="fs-6">Max 2 people</small>
+									</div>
+								</div>
+								<div class="container card-text my-2 custom-text-p">
+									<small class="text-muted"> Last updated 24 hours ago </small>
+								</div>
+								<!-- card footer -->
+								<div class="card-footer">
+									<div class="d-grid gap-2">
+										<button class="btn custom-btn" type="button">
+											BOOK NOW
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- honkong -->
+					<div class="col-12 col-sm-6 col-md-4 p-2 d-flex align-items-stretch">
+						<div class="card">
+							<!-- card img carousel  -->
+							<div class="carousel slide" data-bs-ride="carousel">
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img
+											class="d-block w-100 custom-card-img"
+											src="../../assets/travel-card/hongkong/hongkong1.jpg"
+											alt="First slide"
+										/>
+									</div>
+									<div class="carousel-item">
+										<img
+											class="d-block w-100 custom-card-img"
+											src="../../assets/travel-card/hongkong/hongkong2.jpg"
+											alt="Second slide"
+										/>
+									</div>
+									<div class="carousel-item">
+										<img
+											class="d-block w-100 custom-card-img"
+											src="../../assets/travel-card/hongkong/hongkong3.jpg"
+											alt="Third slide"
+										/>
+									</div>
+								</div>
+							</div>
+
+							<!-- card body -->
+							<div class="card-body">
+								<div
+									class="container d-flex justify-content-between align-content-center py-1 custom-text-p"
+								>
+									<h5 class="card-title m-0 fw-bold fs-3 custom-fs-sm">
+										Ruins of Saint Paul's
+									</h5>
+									<div class="d-flex flex-column align-items-end">
+										<h3 class="m-0 fw-bold fs-2 custom-fs-sm">&#8364;3,999</h3>
+										<small
+											class="fs-5 fw-normal text-decoration-line-through custom-fs-sm"
+										>
+											&#8364;4,499
+										</small>
+									</div>
+								</div>
+								<div
+									class="container d-flex gap-2 align-items-center custom-text-p"
+								>
+									<img
+										src="../../assets/icons/map-pin_icon.svg"
+										alt="map pin icon"
+										class="custom-icon-sm"
+									/>
+									<p class="m-0 fw-medium fs-5 custom-fs-md">
+										Hong Kong, China
+									</p>
+								</div>
+								<div class="container custom-text-p">
+									<p class="card-text m-1">
+										Hong Kong is a special administrative region of China.
+										Situated on China's southern coast just south of Shenzhen,
+										it consists of Hong Kong Island, Kowloon, and the New
+										Territories.
+									</p>
+								</div>
+								<div
+									class="container my-3 mx-sm-2 d-flex justify-content-between"
+								>
+									<div class="d-flex gap-2">
+										<img
+											src="../../assets/icons/calendar_icon.svg"
+											alt="calendar icon"
+											class="d-sm-none d-lg-block"
+										/>
+										<small class="fs-6">3 days</small>
+									</div>
+									<div class="d-flex gap-2">
+										<img
+											src="../../assets/icons/group-icon.svg"
+											alt="group icon"
+											class="d-sm-none d-lg-block"
+										/>
+										<small class="fs-6">Max 3 people</small>
+									</div>
+								</div>
+								<div class="container card-text my-2 custom-text-p">
+									<small class="text-muted"> Last updated 24 hours ago </small>
+								</div>
+								<!-- card footer -->
+								<div class="card-footer">
+									<div class="d-grid gap-2">
+										<button class="btn custom-btn" type="button">
+											BOOK NOW
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- instabul -->
+					<div class="col-12 col-sm-6 col-md-4 p-2 d-flex align-items-stretch">
+						<div class="card">
+							<!-- card img carousel  -->
+							<div class="carousel slide" data-bs-ride="carousel">
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img
+											class="d-block w-100 custom-card-img"
+											src="../../assets/travel-card/istanbul/istanbul1.jpg"
+											alt="First slide"
+										/>
+									</div>
+									<div class="carousel-item">
+										<img
+											class="d-block w-100 custom-card-img"
+											src="../../assets/travel-card/istanbul/istanbul2.jpg"
+											alt="Second slide"
+										/>
+									</div>
+									<div class="carousel-item">
+										<img
+											class="d-block w-100 custom-card-img"
+											src="../../assets/travel-card/istanbul/istanbul3.jpg"
+											alt="Third slide"
+										/>
+									</div>
+								</div>
+							</div>
+
+							<!-- card body -->
+							<div class="card-body">
+								<div
+									class="container d-flex justify-content-between align-content-center py-1 custom-text-p"
+								>
+									<h5 class="card-title m-0 fw-bold fs-3 custom-fs-sm">
+										Pelit Chocolate Museum
+									</h5>
+									<div class="d-flex flex-column align-items-end">
+										<h3 class="m-0 fw-bold fs-2 custom-fs-sm">&#8364;1,699</h3>
+										<small
+											class="fs-5 fw-normal text-decoration-line-through custom-fs-sm"
+										>
+											&#8364;1,999
+										</small>
+									</div>
+								</div>
+								<div
+									class="container d-flex gap-2 align-items-center custom-text-p"
+								>
+									<img
+										src="../../assets/icons/map-pin_icon.svg"
+										alt="map pin icon"
+										class="custom-icon-sm"
+									/>
+									<p class="m-0 fw-medium fs-5 custom-fs-md">
+										Istanbul, Turkey
+									</p>
+								</div>
+								<div class="container custom-text-p">
+									<p class="card-text m-1">
+										Istanbul is a major city in Turkey that straddles Europe and
+										Asia across the Bosphorus Strait. Its Old City reflects
+										cultural influences of the many empires that once ruled
+										here.
+									</p>
+								</div>
+								<div
+									class="container my-3 mx-sm-2 d-flex justify-content-between"
+								>
+									<div class="d-flex gap-2">
+										<img
+											src="../../assets/icons/calendar_icon.svg"
+											alt="calendar icon"
+											class="d-sm-none d-lg-block"
+										/>
+										<small class="fs-6">3 days</small>
+									</div>
+									<div class="d-flex gap-2">
+										<img
+											src="../../assets/icons/group-icon.svg"
+											alt="group icon"
+											class="d-sm-none d-lg-block"
+										/>
+										<small class="fs-6">Max 2 people</small>
+									</div>
+								</div>
+								<div class="container card-text my-2 custom-text-p">
+									<small class="text-muted"> Last updated 36 hours ago </small>
+								</div>
+								<!-- card footer -->
+								<div class="card-footer">
+									<div class="d-grid gap-2">
+										<button class="btn custom-btn" type="button">
+											BOOK NOW
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- london -->
+					<div class="col-12 col-sm-6 col-md-4 p-2 d-flex align-items-stretch">
+						<div class="card">
+							<!-- card img carousel  -->
+							<div class="carousel slide" data-bs-ride="carousel">
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img
+											class="d-block w-100 custom-card-img"
+											src="../../assets/travel-card/london/london1.jpg"
+											alt="First slide"
+										/>
+									</div>
+									<div class="carousel-item">
+										<img
+											class="d-block w-100 custom-card-img"
+											src="../../assets/travel-card/london/london2.jpg"
+											alt="Second slide"
+										/>
+									</div>
+									<div class="carousel-item">
+										<img
+											class="d-block w-100 custom-card-img"
+											src="../../assets/travel-card/london/london3.jpg"
+											alt="Third slide"
+										/>
+									</div>
+								</div>
+							</div>
+
+							<!-- card body -->
+							<div class="card-body">
+								<div
+									class="container d-flex justify-content-between align-content-center py-1 custom-text-p"
+								>
+									<h5 class="card-title m-0 fw-bold fs-3 custom-fs-sm">
+										Big Ben
+									</h5>
+									<div class="d-flex flex-column align-items-end">
+										<h3 class="m-0 fw-bold fs-2 custom-fs-sm">&#8364;2,999</h3>
+										<small
+											class="fs-5 fw-normal text-decoration-line-through custom-fs-sm"
+										>
+											&#8364;3,999
+										</small>
+									</div>
+								</div>
+								<div
+									class="container d-flex gap-2 align-items-center custom-text-p"
+								>
+									<img
+										src="../../assets/icons/map-pin_icon.svg"
+										alt="map pin icon"
+										class="custom-icon-sm"
+									/>
+									<p class="m-0 fw-medium fs-5 custom-fs-md">
+										London, United Kingdom
+									</p>
+								</div>
+								<div class="container custom-text-p">
+									<p class="card-text m-1">
+										London, the capital of England and the United Kingdom, is a
+										21st-century city with history stretching back to Roman
+										times.
+									</p>
+								</div>
+								<div
+									class="container my-3 mx-sm-2 d-flex justify-content-between"
+								>
+									<div class="d-flex gap-2">
+										<img
+											src="../../assets/icons/calendar_icon.svg"
+											alt="calendar icon"
+											class="d-sm-none d-lg-block"
+										/>
+										<small class="fs-6">3 days</small>
+									</div>
+									<div class="d-flex gap-2">
+										<img
+											src="../../assets/icons/group-icon.svg"
+											alt="group icon"
+											class="d-sm-none d-lg-block"
+										/>
+										<small class="fs-6">Max 3 people</small>
+									</div>
+								</div>
+								<div class="container card-text my-2 custom-text-p">
+									<small class="text-muted"> Last updated 12 hours ago </small>
+								</div>
+								<!-- card footer -->
+								<div class="card-footer">
+									<div class="d-grid gap-2">
+										<button class="btn custom-btn" type="button">
+											BOOK NOW
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- malmo -->
+					<div class="col-12 col-sm-6 col-md-4 p-2 d-flex align-items-stretch">
+						<div class="card">
+							<!-- card img carousel  -->
+							<div class="carousel slide" data-bs-ride="carousel">
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img
+											class="d-block w-100 custom-card-img"
+											src="../../assets/travel-card/malmo/malmo1.jpg"
+											alt="First slide"
+										/>
+									</div>
+									<div class="carousel-item">
+										<img
+											class="d-block w-100 custom-card-img"
+											src="../../assets/travel-card/malmo/malmo2.jpg"
+											alt="Second slide"
+										/>
+									</div>
+									<div class="carousel-item">
+										<img
+											class="d-block w-100 custom-card-img"
+											src="../../assets/travel-card/malmo/malmo3.jpg"
+											alt="Third slide"
+										/>
+									</div>
+								</div>
+							</div>
+
+							<!-- card body -->
+							<div class="card-body">
+								<div
+									class="container d-flex justify-content-between align-content-center py-1 custom-text-p"
+								>
+									<h5 class="card-title m-0 fw-bold fs-3 custom-fs-sm">
+										Limhamns Church
+									</h5>
+									<div class="d-flex flex-column align-items-end">
+										<h3 class="m-0 fw-bold fs-2 custom-fs-sm">&#8364;1,999</h3>
+										<small
+											class="fs-5 fw-normal text-decoration-line-through custom-fs-sm"
+										>
+											&#8364;2,999
+										</small>
+									</div>
+								</div>
+								<div
+									class="container d-flex gap-2 align-items-center custom-text-p"
+								>
+									<img
+										src="../../assets/icons/map-pin_icon.svg"
+										alt="map pin icon"
+										class="custom-icon-sm"
+									/>
+									<p class="m-0 fw-medium fs-5 custom-fs-md">Malmö, Sweden</p>
+								</div>
+								<div class="container custom-text-p">
+									<p class="card-text m-1">
+										Malmö is a coastal city in southern Sweden. It lies at the
+										eastern end of the striking Öresund Bridge, a long road and
+										railway bridge-tunnel running to Copenhagen, Denmark.
+									</p>
+								</div>
+								<div
+									class="container my-3 mx-sm-2 d-flex justify-content-between"
+								>
+									<div class="d-flex gap-2">
+										<img
+											src="../../assets/icons/calendar_icon.svg"
+											alt="calendar icon"
+											class="d-sm-none d-lg-block"
+										/>
+										<small class="fs-6">3 days</small>
+									</div>
+									<div class="d-flex gap-2">
+										<img
+											src="../../assets/icons/group-icon.svg"
+											alt="group icon"
+											class="d-sm-none d-lg-block"
+										/>
+										<small class="fs-6">Max 2 people</small>
+									</div>
+								</div>
+								<div class="container card-text my-2 custom-text-p">
 									<small class="text-muted"> Last updated 24 hours ago </small>
 								</div>
 								<!-- card footer -->
@@ -365,7 +995,96 @@ Version: 1.0
 				</div>
 				<!-- card deck -->
 			</div>
-			<!-- grid destinations -->
+			<!-- closing grid destinations -->
+
+			<div
+				id="trending-destinations"
+				class="container text-center text-sm-start my-5"
+			>
+				<h3 class="fs-1 custom-text-p">Trending Destinations</h3>
+			</div>
+
+			<!-- trending destinations -->
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-6 my-3 custom-card-trending">
+						<div class="card">
+							<img
+								src="../../assets/travel-card/dublin/dublin1.jpg"
+								class="card-img"
+								alt="dublin trending image"
+							/>
+							<div class="card-img-overlay">
+								<h5 class="card-title">Dublin</h5>
+								<p class="card-text">
+									This is a wider card with supporting text below as a natural
+									lead-in to additional content. This content is a little bit
+									longer.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 my-3">
+						<div class="card custom-card-trending">
+							<img
+								src="../../assets/home-carousel/denmark.jpg"
+								class="card-img"
+								alt="..."
+							/>
+							<div class="card-img-overlay">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">
+									This is a wider card with supporting text below as a natural
+									lead-in to additional content. This content is a little bit
+									longer.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-4 my-3">
+						<div class="card custom-card-trending">
+							<img
+								src="../../assets/home-carousel/denmark.jpg"
+								class="card-img"
+								alt="..."
+							/>
+							<div class="card-img-overlay">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Card Text</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 my-3">
+						<div class="card custom-card-trending">
+							<img
+								src="../../assets/home-carousel/denmark.jpg"
+								class="card-img"
+								alt="..."
+							/>
+							<div class="card-img-overlay">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Card Text</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 my-3">
+						<div class="card custom-card-trending">
+							<img
+								src="../../assets/home-carousel/denmark.jpg"
+								class="card-img"
+								alt="..."
+							/>
+							<div class="card-img-overlay">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Card Text</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- closing trending destinations -->
 		</div>
 		<!-- closing main content -->
 
@@ -375,7 +1094,7 @@ Version: 1.0
 				<div class="col d-flex align-items-center mb-3">
 					<img
 						class="img-fluid"
-						src="/assets/favicon/plane_icon.svg"
+						src="../../assets/favicon/plane_icon.svg"
 						alt="Travel Explorer logo"
 					/>
 					<p class="my-0 mx-2">
