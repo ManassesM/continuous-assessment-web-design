@@ -35,7 +35,7 @@ Version: 1.0
 
 		<!-- css -->
 		<link rel="stylesheet" href="../../global.css" />
-		<link rel="stylesheet" href="../../style.css" />
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
 		<!-- ########## header ########## -->
@@ -70,7 +70,61 @@ Version: 1.0
 		<!--closing header-->
 
 		<!-- main content -->
-		<div class="container my-3">Contact Us page</div>
+		<div class="container my-3">
+			<div class="container text-center text-sm-start my-5">
+				<h3 class="fs-1 custom-text-p">Contact us</h3>
+			</div>
+
+			<form class="container w-100 custom-form">
+				<!-- name -->
+				<div class="mb-3">
+					<label for="inputName" class="form-label">Name</label>
+					<input
+						type="text"
+						class="form-control"
+						id="exampleInputEmail1"
+						aria-describedby="nameHelp"
+					/>
+				</div>
+				<!-- email -->
+				<div class="input-group mb-3">
+					<label for="inputEmail" class="form-label">Email</label>
+					<input
+						type="text"
+						class="form-control"
+						placeholder="email"
+						aria-label="email"
+					/>
+					<span class="input-group-text">@</span>
+					<input
+						type="text"
+						class="form-control"
+						placeholder="mail"
+						aria-label="mail"
+					/>
+				</div>
+
+				<select class="form-select mb-3" aria-label="select">
+					<option selected>Booking</option>
+					<option value="payment">Payment</option>
+					<option value="general_info">General info</option>
+					<option value="other">Other</option>
+				</select>
+
+				<div class="mb-3">
+					<label for="textArea" class="form-label">
+						What can we be of service?
+					</label>
+					<textarea
+						class="form-control"
+						id="formControlTextArea"
+						rows="3"
+					></textarea>
+				</div>
+
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
 
 		<!-- ########## footer ########## -->
 		<div class="footer px-4 rounded-top">
