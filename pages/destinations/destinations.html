@@ -80,8 +80,22 @@ Version: 2.0
 				/>
 			</div>
 			<!-- grid destinations -->
-			<div class="container text-center text-sm-start my-5">
+			<div
+				class="container text-center text-sm-start my-5 d-sm-flex align-items-center justify-content-between"
+			>
 				<h3 class="fs-1 custom-text-p">Best deals for the week</h3>
+
+				<!-- nav -->
+				<ul class="nav custom-nav d-flex justify-content-center">
+					<li class="nav-item">
+						<a class="nav-link" aria-current="page" href="#ex-destinations">
+							Trending
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#ex-ireland">Ireland</a>
+					</li>
+				</ul>
 			</div>
 			<div class="container-fluid my-3">
 				<div class="row g-3">
@@ -385,8 +399,8 @@ Version: 2.0
 
 					<!-- anchor tag -->
 					<div class="container text-center text-sm-start my-5">
-						<a class="fs-1 custom-text-p" href="#trending-destinations">
-							Want to jump to Trending Destinations?
+						<a class="fs-1 custom-text-p" href="#ex-destinations">
+							Jump to trending destinations!
 						</a>
 					</div>
 
@@ -998,7 +1012,7 @@ Version: 2.0
 			<!-- closing grid destinations -->
 
 			<div
-				id="trending-destinations"
+				id="ex-destinations"
 				class="container text-center text-sm-start my-5"
 			>
 				<h3 class="fs-1 custom-text-p">Trending Destinations</h3>
@@ -1100,76 +1114,141 @@ Version: 2.0
 			</div>
 			<!-- closing trending destinations -->
 
-			<div class="container text-center text-sm-start my-5">
+			<div id="#ex-ireland" class="container text-center text-sm-start my-5">
 				<h3 class="fs-1 custom-text-p">Explore Ireland</h3>
 			</div>
 		</div>
 
 		<!-- explore ireland -->
-		<div class="container">
-			<div class="row-cols-2">
-				<div class="col-12 col-sm-6">
-					<!-- dublin -->
-					<div class="row">
-						<div class="col-12 col-sm-6">
-							<div class="card mb-3 custom-card-explore">
-								<div class="row g-0">
-									<div class="col-md-4">
-										<img
-											src="../../assets/travel-card/dublin/dublin3.jpg"
-											class="img-fluid rounded-start"
-											alt="explore dublin image"
-										/>
-									</div>
-									<div class="col-md-8">
-										<div class="card-body">
-											<h5 class="card-title">Dublin</h5>
-											<p class="card-text">
-												This is a wider card with supporting text below as a
-												natural lead-in to additional content. This content is a
-												little bit longer.
-											</p>
-											<a href="#" class="btn btn-dark">Explore</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- dublin -->
-				</div>
-				<div class="col-12 col-sm-6">
-					<!-- dublin -->
-					<div class="row">
-						<div class="col-12 col-sm-6">
-							<div class="card mb-3 custom-card-explore">
-								<div class="row g-0">
-									<div class="col-md-4">
-										<img
-											src="../../assets/travel-card/dublin/dublin3.jpg"
-											class="img-fluid rounded-start"
-											alt="explore dublin image"
-										/>
-									</div>
-									<div class="col-md-8">
-										<div class="card-body">
-											<h5 class="card-title">Dublin</h5>
-											<p class="card-text">
-												This is a wider card with supporting text below as a
-												natural lead-in to additional content. This content is a
-												little bit longer.
-											</p>
-											<a href="#" class="btn btn-dark">Explore</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- dublin -->
-				</div>
+		<div class="container mb-4">
+			<div class="row">
 				<!-- dublin -->
-				<div class="col">Column</div>
+				<div
+					class="col-12 col-md-6 col-lg-4 g-3 d-flex align-items-stretch custom-card-explore"
+				>
+					<!-- dublin card -->
+					<div class="card">
+						<img
+							src="../../assets/travel-card/dublin/dublin3.jpg"
+							class="img-fluid rounded-start"
+							alt="explore dublin image"
+						/>
+						<div class="card-body">
+							<h5 class="card-title">Dublin</h5>
+							<p class="card-text">
+								Dublin, capital of the Republic of Ireland, is on Ireland's east
+								coast at the mouth of the River Liffey.
+							</p>
+							<a href="#" class="btn btn-dark">Explore</a>
+						</div>
+					</div>
+				</div>
+				<!-- galway -->
+				<div
+					class="col-12 col-md-6 col-lg-4 g-3 d-flex align-items-stretch custom-card-explore"
+				>
+					<!-- galway card -->
+					<div class="card">
+						<img
+							src="../../assets/travel-card/explorer_ireland/galway.jpg"
+							class="img-fluid rounded-start"
+							alt="explore galway image"
+						/>
+						<div class="card-body">
+							<h5 class="card-title">Galway</h5>
+							<p class="card-text">
+								Galway, a harbour city on Ireland's west coast, sits where the
+								River Corrib meets the Atlantic Ocean.
+							</p>
+							<a href="#" class="btn btn-dark">Explore</a>
+						</div>
+					</div>
+				</div>
+				<!-- cork -->
+				<div
+					class="col-12 col-md-6 col-lg-4 g-3 d-flex align-items-stretch custom-card-explore"
+				>
+					<!-- cork card -->
+					<div class="card">
+						<img
+							src="../../assets/travel-card/explorer_ireland/cork.jpg"
+							class="img-fluid rounded-start"
+							alt="explore cork image"
+						/>
+						<div class="card-body">
+							<h5 class="card-title">Cork</h5>
+							<p class="card-text">
+								Cork is the second-largest city in Ireland, the county town of
+								County Cork, the largest city in the province of Munster and the
+								third largest on the island of Ireland.
+							</p>
+							<a href="#" class="btn btn-dark">Explore</a>
+						</div>
+					</div>
+				</div>
+				<!-- killarney -->
+				<div
+					class="col-12 col-md-6 col-lg-4 g-3 d-flex align-items-stretch custom-card-explore"
+				>
+					<!-- killarney card -->
+					<div class="card">
+						<img
+							src="../../assets/travel-card/explorer_ireland/killarney.jpg"
+							class="img-fluid rounded-start"
+							alt="explore killarney image"
+						/>
+						<div class="card-body">
+							<h5 class="card-title">Killarney</h5>
+							<p class="card-text">
+								Killarney is a town on the shores of Lough Leane in southwest
+								Ireland's County Kerry.
+							</p>
+							<a href="#" class="btn btn-dark">Explore</a>
+						</div>
+					</div>
+				</div>
+				<!-- limerick -->
+				<div
+					class="col-12 col-md-6 col-lg-4 g-3 d-flex align-items-stretch custom-card-explore"
+				>
+					<!-- limerick card -->
+					<div class="card">
+						<img
+							src="../../assets/travel-card/explorer_ireland/limerick.jpg"
+							class="img-fluid rounded-start"
+							alt="explore limerick image"
+						/>
+						<div class="card-body">
+							<h5 class="card-title">Limerick</h5>
+							<p class="card-text">
+								Limerick is a major city in the Republic of Ireland, set in
+								Munster province in the south of the country.
+							</p>
+							<a href="#" class="btn btn-dark">Explore</a>
+						</div>
+					</div>
+				</div>
+				<!-- Wexford -->
+				<div
+					class="col-12 col-md-6 col-lg-4 g-3 d-flex align-items-stretch custom-card-explore"
+				>
+					<!-- wexford card -->
+					<div class="card">
+						<img
+							src="../../assets/travel-card/explorer_ireland/wexford.jpg"
+							class="img-fluid rounded-start"
+							alt="explore wexford image"
+						/>
+						<div class="card-body">
+							<h5 class="card-title">Wexford</h5>
+							<p class="card-text">
+								Wexford is a town in southeast Ireland, at the mouth of the
+								River Slaney.
+							</p>
+							<a href="#" class="btn btn-dark">Explore</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<!-- closing main content -->
