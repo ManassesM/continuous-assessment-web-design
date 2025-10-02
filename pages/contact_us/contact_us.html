@@ -71,11 +71,13 @@ Version: 1.0
 
 		<!-- main content -->
 		<div class="container my-3">
+			<!-- contact us -->
 			<div class="container text-center text-sm-start my-5">
 				<h3 class="fs-1 custom-text-p">Contact us</h3>
 			</div>
 
-			<form class="container w-100 custom-form">
+			<!-- contact us form -->
+			<form class="container custom-form">
 				<!-- name -->
 				<div class="mb-3">
 					<label for="inputName" class="form-label">Name</label>
@@ -87,21 +89,23 @@ Version: 1.0
 					/>
 				</div>
 				<!-- email -->
-				<div class="input-group mb-3">
+				<div class="mb-3">
 					<label for="inputEmail" class="form-label">Email</label>
-					<input
-						type="text"
-						class="form-control"
-						placeholder="email"
-						aria-label="email"
-					/>
-					<span class="input-group-text">@</span>
-					<input
-						type="text"
-						class="form-control"
-						placeholder="mail"
-						aria-label="mail"
-					/>
+					<div class="input-group">
+						<input
+							type="text"
+							class="form-control"
+							placeholder="email"
+							aria-label="email"
+						/>
+						<span class="input-group-text">@</span>
+						<input
+							type="text"
+							class="form-control"
+							placeholder="mail"
+							aria-label="mail"
+						/>
+					</div>
 				</div>
 
 				<select class="form-select mb-3" aria-label="select">
@@ -124,6 +128,176 @@ Version: 1.0
 
 				<button type="submit" class="btn btn-primary">Submit</button>
 			</form>
+
+			<!-- faq -->
+			<div class="container text-center text-sm-start my-5">
+				<h3 class="fs-1 custom-text-p">Frequently asked questions</h3>
+			</div>
+
+			<!-- faq accordion -->
+			<div class="accordion container custom-form mb-5" id="accordionExample">
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button
+							class="accordion-button"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#collapseOne"
+							aria-expanded="true"
+							aria-controls="collapseOne"
+						>
+							Cancellations
+						</button>
+					</h2>
+					<div
+						id="collapseOne"
+						class="accordion-collapse collapse show"
+						data-bs-parent="#accordionExample"
+					>
+						<div class="accordion-body">
+							<h6>Can I cancel my booking?</h6>
+							<p>
+								Yes, any cancellation fees are determined by the property and
+								listed in your cancellation policy. You will pay any additional
+								costs to the property.
+							</p>
+							<h6>If I need to cancel my booking, will I pay a fee?</h6>
+							<p>
+								If you have a free cancellation booking, you won't pay a
+								cancellation fee. If your booking is no longer free to cancel or
+								is non-refundable, you may incur a cancellation fee. Any
+								cancellation fees are determined by the property. You will pay
+								any additional costs to the property.
+							</p>
+
+							<h6>
+								Can I cancel or change my dates for a non-refundable booking?
+							</h6>
+							<p>
+								Cancelling a Non-Refundable booking normally incurs a charge.
+								However, you may have the option to request free cancellation
+								when managing your booking. This sends a request to the
+								property, who may decide to waive your cancellation fee. It is
+								not possible to change dates for a Non-Refundable booking,
+								though it is possible to re-book for your desired dates if your
+								waive fees request is successful.
+							</p>
+
+							<h6>How do I know if my booking was cancelled?</h6>
+							<p>
+								After you cancel a booking with us, you should receive an email
+								confirming the cancellation. Check your inbox and spam/junk mail
+								folders. If you don't receive an email within 24 hours, please
+								contact the property to confirm they got your cancellation.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button
+							class="accordion-button collapsed"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#collapseTwo"
+							aria-expanded="false"
+							aria-controls="collapseTwo"
+						>
+							Payment
+						</button>
+					</h2>
+					<div
+						id="collapseTwo"
+						class="accordion-collapse collapse"
+						data-bs-parent="#accordionExample"
+					>
+						<div class="accordion-body">
+							<h6>Lorem, ipsum dolor.</h6>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
+								optio sapiente neque nihil est culpa quis quam inventore?
+								Tempora iste beatae molestias, quidem maxime ea consectetur
+								explicabo facilis corporis voluptas, illo sequi cum porro
+								exercitationem a non rem enim qui quod reprehenderit itaque
+								aspernatur earum sunt voluptatibus? Praesentium, tempore
+								quaerat!
+							</p>
+							<h6>Lorem, ipsum dolor.</h6>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
+								optio sapiente neque nihil est culpa quis quam inventore?
+								Tempora iste beatae molestias, quidem maxime ea consectetur
+								explicabo facilis corporis voluptas, illo sequi cum porro
+								exercitationem a non rem enim qui quod reprehenderit itaque
+								aspernatur earum sunt voluptatibus? Praesentium, tempore
+								quaerat!
+							</p>
+							<h6>Lorem, ipsum dolor.</h6>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
+								optio sapiente neque nihil est culpa quis quam inventore?
+								Tempora iste beatae molestias, quidem maxime ea consectetur
+								explicabo facilis corporis voluptas, illo sequi cum porro
+								exercitationem a non rem enim qui quod reprehenderit itaque
+								aspernatur earum sunt voluptatibus? Praesentium, tempore
+								quaerat!
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button
+							class="accordion-button collapsed"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#collapseThree"
+							aria-expanded="false"
+							aria-controls="collapseThree"
+						>
+							Booking details
+						</button>
+					</h2>
+					<div
+						id="collapseThree"
+						class="accordion-collapse collapse"
+						data-bs-parent="#accordionExample"
+					>
+						<div class="accordion-body">
+							<h6>Lorem, ipsum dolor.</h6>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
+								optio sapiente neque nihil est culpa quis quam inventore?
+								Tempora iste beatae molestias, quidem maxime ea consectetur
+								explicabo facilis corporis voluptas, illo sequi cum porro
+								exercitationem a non rem enim qui quod reprehenderit itaque
+								aspernatur earum sunt voluptatibus? Praesentium, tempore
+								quaerat!
+							</p>
+							<h6>Lorem, ipsum dolor.</h6>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
+								optio sapiente neque nihil est culpa quis quam inventore?
+								Tempora iste beatae molestias, quidem maxime ea consectetur
+								explicabo facilis corporis voluptas, illo sequi cum porro
+								exercitationem a non rem enim qui quod reprehenderit itaque
+								aspernatur earum sunt voluptatibus? Praesentium, tempore
+								quaerat!
+							</p>
+							<h6>Lorem, ipsum dolor.</h6>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
+								optio sapiente neque nihil est culpa quis quam inventore?
+								Tempora iste beatae molestias, quidem maxime ea consectetur
+								explicabo facilis corporis voluptas, illo sequi cum porro
+								exercitationem a non rem enim qui quod reprehenderit itaque
+								aspernatur earum sunt voluptatibus? Praesentium, tempore
+								quaerat!
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<!-- ########## footer ########## -->
