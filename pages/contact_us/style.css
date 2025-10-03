@@ -1,3 +1,8 @@
+.custom-toaster-container {
+  background-color: #87284E;
+  color: white;
+}
+
 @media only screen and (min-width: 1199px) {
   .custom-form {
     width: 50% !important;
