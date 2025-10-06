@@ -69,15 +69,34 @@ const validateInputs = (usernameValue, emailValue, textareaValue) => {
 		setError(email, 'Email is required')
 		isValid = false
 	} else {
-		setSuccess(email)
+		if (validateEmail(emailValue) === null) {
+			setError(email, 'Please, enter a valid email')
+			isValid = false
+		} else {
+			setSuccess(email)
+		}
 	}
 
 	if (textareaValue === '') {
 		setError(textarea, 'Text is required')
 		isValid = false
 	} else {
-		setSuccess(textarea)
+		if (textareaValue.length < 5) {
+			setError(textarea, 'Text length must be at least 5 characters long')
+			isValid = false
+		} else {
+			setSuccess(textarea)
+		}
+
+		return isValid
 	}
 
-	return isValid
+	// validate email
+	function validateEmail(email) {
+		return email
+			.toLowerCase()
+			.match(
+				/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+			)
+	}
 }
